@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-// Renders an object under a marker with a preset or a patternUrl
 export default class Marker extends Component {
   static propTypes = {
     parameters: PropTypes.shape({
@@ -20,7 +19,6 @@ export default class Marker extends Component {
   };
 
   static defaultProps = {
-    // arjs component already has a mapping to default parameters,
     parameters: {}
   };
 

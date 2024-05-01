@@ -15,13 +15,12 @@ const PARAMETERS = [
   "sourceWidth",
   "sourceHeight",
 
-  // Canvas dimensions
   "displayHeight",
   "displayWidth",
   "canvasWidth",
   "canvasHeight",
 
-  // Tracking module ['tango', 'artoolkit', 'best']
+
   "trackingMethod",
   "areaLearningButton",
   "performanceProfile",
@@ -29,26 +28,6 @@ const PARAMETERS = [
   "debugUIEnabled"
 ];
 
-/**
- * AFrameRenderer
- * 
- * Render aframe.io primitives using a single marker
- * 
- * Use multiple markers (independent) and render different objects
- * 
- * Use camera as an entity or use cameraTransformMatrix (camera movement)
- *  
- * Can also render aframe.io bindings for React (WebVR) 
- *
- * Bugs/Errors to patch:
- * 
- * AR.js gives this error 'THREEx.ArMarkerControls: 'markersAreaEnabled' is not a property of this material.'
- * 
- * Why ?
- * - Composition
- * - DRY code
- * - Abstraction over artoolkit
- */
 export default class AFrameRenderer extends Component {
   container = document.body;
   renderer = null;

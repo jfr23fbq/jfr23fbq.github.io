@@ -3,9 +3,6 @@ import { render } from "react-dom";
 
 import { AFrameRenderer, Marker } from "../src";
 
-/**
- * In this example, we use multiple independent markers.
- */
 class MultiMarker extends Component {
   render() {
     return (

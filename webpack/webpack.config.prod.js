@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
+//webpack
 const output = () => ({
   filename: 'react-ar.min.js',
   path: path.resolve(__dirname, '../build'),

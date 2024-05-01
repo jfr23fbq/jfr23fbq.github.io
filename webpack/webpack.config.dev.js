@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 
+//weebpack
 module.exports = {
   entry: path.resolve(__dirname, '../public/App.js'),
   output: {

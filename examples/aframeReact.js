@@ -4,6 +4,7 @@ import { Entity } from "aframe-react";
 
 import { AFrameRenderer, Marker } from "../src";
 
+//AR frame marker component
 class ReactArApp extends Component {
   render() {
     return (
